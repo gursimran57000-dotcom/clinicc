@@ -1,24 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhukhbhanjan Clinic</title>
-    <!-- Loads Tailwind CSS instantly -->
+    <!-- Tailwind CSS for instant styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    
-    <!-- Loads React in-browser helpers -->
-    <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    
-    <script type="text/babel" data-type="module">
-      import App from './App.jsx';
-      const root = ReactDOM.createRoot(document.getElementById('root'));
-      root.render(React.createElement(App));
-    </script>
-  </body>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white p-4 shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wide">Dhukhbhanjan Clinic</h1>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#home" class="hover:text-blue-200">Home</a>
+                <a href="#about" class="hover:text-blue-200">About</a>
+                <a href="#services" class="hover:text-blue-200">Services</a>
+                <a href="#testimonials" class="hover:text-blue-200">Testimonials</a>
+                <a href="#contact" class="hover:text-blue-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="bg-gradient-to-r class bg-blue-500 text-white py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Healing With Heart</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">Providing comprehensive, dedicated health evaluations and care plans for your entire family.</p>
+            <a href="#contact" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-50 transition">Book an Appointment</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-center text-slate-900 mb-12">Our Services</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <div class="text-3xl mb-3">🩺</div>
+                <h4 class="text-xl font-bold mb-2">General Checkup</h4>
+                <p class="text-slate-600 text-sm">Comprehensive health evaluations for adults and elderly with personalized care plans.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <div class="text-3xl mb-3">👶</div>
+                <h4 class="text-xl font-bold mb-2">Child Care</h4>
+                <p class="text-slate-600 text-sm">Dedicated paediatric consultations to keep your little ones healthy and thriving.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <div class="text-3xl mb-3">💉</div>
+                <h4 class="text-xl font-bold mb-2">Vaccination</h4>
+                <p class="text-slate-600 text-sm">Complete immunisation schedules for children and adults following national guidelines.</p>
+            </div>
+            <!-- Service 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <div class="text-3xl mb-3">🩸</div>
+                <h4 class="text-xl font-bold mb-2">Diabetes Care</h4>
+                <p class="text-slate-600 text-sm">Ongoing monitoring, lifestyle guidance and medication management for diabetic patients.</p>
+            </div>
+            <!-- Service 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <div class="text-3xl mb-3">🚨</div>
+                <h4 class="text-xl font-bold mb-2">Emergency Care</h4>
+                <p class="text-slate-600 text-sm">Prompt attention for acute illnesses and urgent medical needs - walk-ins welcome.</p>
+            </div>
+            <!-- Service 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-md border border-slate-100">
+                <div class="text-3xl mb-3">💖</div>
+                <h4 class="text-xl font-bold mb-2">Chronic Disease Mgmt</h4>
+                <p class="text-slate-600 text-sm">Long-term management of hypertension, thyroid disorders and other chronic conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-slate-100 py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold text-center text-slate-900 mb-12">Patient Testimonials</h3>
+            <div class="bg-white p-8 rounded-xl shadow-md relative">
+                <p class="text-lg italic text-slate-700 mb-4">"Always Help With Smile. The doctor is very kind and listens patiently to every concern. Highly recommend this clinic to everyone."</p>
+                <div class="font-bold text-blue-600">Saxena</div>
+                <div class="text-yellow-400 mt-1">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl font-bold text-slate-900 mb-4">Contact Us</h3>
+        <p class="text-slate-600 mb-8">Reach out to book an appointment or ask any health-related questions.</p>
+        <div class="bg-white p-8 rounded-xl shadow-md inline-block text-left w-full max-w-md border border-slate-100">
+            <p class="mb-3"><strong>📍 Address:</strong> Main Road, Near Central Square</p>
+            <p class="mb-3"><strong>📞 Phone:</strong> +91 98765 43210</p>
+            <p class="mb-3"><strong>⏰ Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2026 Dhukhbhanjan Clinic. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
